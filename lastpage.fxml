@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="545.0" prefWidth="634.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LastPageController">
+   <children>
+      <TableView fx:id="tableView" layoutX="10.0" layoutY="10.0" prefHeight="310.0" prefWidth="598.0">
+         <columns>
+            <TableColumn fx:id="name" prefWidth="111.0" text="F_Name" />
+            <TableColumn fx:id="namel" prefWidth="86.0" text="L_Name" />
+            <TableColumn fx:id="mail" prefWidth="142.0" text="Email" />
+            <TableColumn fx:id="passw" prefWidth="102.0" text="Password" />
+            <TableColumn fx:id="cpassw" minWidth="-Infinity" prefWidth="155.0" text="Confirm_Password" />
+         </columns>
+         <effect>
+            <Glow />
+         </effect>
+      </TableView>
+      <Button fx:id="close" layoutX="295.0" layoutY="400.0" mnemonicParsing="false" onAction="#close" text="Close" />
+      <TextField fx:id="searchf" layoutX="14.0" layoutY="356.0" prefHeight="25.0" prefWidth="200.0" promptText="Search Here!" />
+      <Button fx:id="searchb" layoutX="62.0" layoutY="400.0" mnemonicParsing="false" onAction="#searchb" text="Search" />
+      <Text fx:id="textarea" layoutX="469.0" layoutY="392.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="112.13671875" />
+   </children>
+</Pane>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<FlowPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="732.0" prefWidth="692.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <children>
+      <Pane prefHeight="718.0" prefWidth="662.0">
+         <children>
+            <Label layoutX="170.0" layoutY="14.0" text="Hello People!" textFill="#c2aa11">
+               <font>
+                  <Font name="Bell MT" size="59.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Label>
+            <Label layoutX="64.0" layoutY="219.0" text="Username">
+               <font>
+                  <Font name="System Italic" size="18.0" />
+               </font>
+               <effect>
+                  <Reflection />
+               </effect>
+            </Label>
+            <Separator layoutX="13.0" layoutY="103.0" prefHeight="9.0" prefWidth="652.0" />
+            <Label layoutX="64.0" layoutY="263.0" text="Password">
+               <font>
+                  <Font name="System Italic" size="18.0" />
+               </font>
+               <effect>
+                  <Reflection />
+               </effect>
+            </Label>
+            <PasswordField fx:id="pword" layoutX="180.0" layoutY="263.0" promptText="Enter Your Password">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+               <effect>
+                  <Glow />
+               </effect>
+            </PasswordField>
+            <TextField fx:id="uname" layoutX="180.0" layoutY="220.0" promptText="Enter Your Username">
+               <effect>
+                  <Glow />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+            <Button fx:id="signin" defaultButton="true" layoutX="216.0" layoutY="327.0" mnemonicParsing="false" onAction="#signIn" text="Sign In">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button fx:id="signup" layoutX="454.0" layoutY="327.0" mnemonicParsing="false" onAction="#signUp" text="Sign Up.">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Separator layoutX="24.0" layoutY="456.0" prefHeight="1.0" prefWidth="641.0" />
+            <Separator layoutX="353.0" layoutY="108.0" orientation="VERTICAL" prefHeight="347.0" prefWidth="4.0" />
+            <Label layoutX="388.0" layoutY="231.0" text="Don't have an account?">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <effect>
+                  <Reflection />
+               </effect>
+            </Label>
+            <Text fx:id="wrongpass" layoutX="13.0" layoutY="407.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="314.13671875" />
+         </children>
+         <effect>
+            <Glow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Pane>
+   </children>
+</FlowPane>
