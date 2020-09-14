@@ -1,3 +1,3 @@
-# JavaFx
+# Using JavaFx
 
-#### Login page and OOPs concepts implemented.
+#### Basic OOPs concepts implemented.
